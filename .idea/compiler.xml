@@ -8,7 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="form" />
+        <module name="SeleniumTest" />
         <module name="security_demo" />
+        <module name="Queue" />
+        <module name="testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
