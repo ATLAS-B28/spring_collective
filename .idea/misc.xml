@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/testing/pom.xml" />
         <option value="$PROJECT_DIR$/SeleniumTest/pom.xml" />
         <option value="$PROJECT_DIR$/Queue/pom.xml" />
+        <option value="$PROJECT_DIR$/bank/pom.xml" />
       </list>
     </option>
   </component>
