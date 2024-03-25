@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/SeleniumTest/pom.xml" />
         <option value="$PROJECT_DIR$/Queue/pom.xml" />
         <option value="$PROJECT_DIR$/bank/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-thymeleaf-sql-main/spring-thymeleaf-sql-main/thymleafspring/pom.xml" />
       </list>
     </option>
   </component>

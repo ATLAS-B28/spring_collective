@@ -9,10 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bank" />
         <module name="form" />
+        <module name="thymleafspring" />
+        <module name="testing" />
         <module name="SeleniumTest" />
         <module name="security_demo" />
         <module name="Queue" />
-        <module name="testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="form" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="security_demo" options="-parameters" />
+      <module name="thymleafspring" options="-parameters" />
     </option>
   </component>
 </project>
