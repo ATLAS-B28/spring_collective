@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 public class TodoApplication {
 
 	@Bean
+	//register this model mapper as bean in the spring container
+	//then call it in the service as a normal module
 	public ModelMapper modelMapper() {
 		return new ModelMapper();
 	}
