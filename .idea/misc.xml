@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/Queue/pom.xml" />
         <option value="$PROJECT_DIR$/bank/pom.xml" />
         <option value="$PROJECT_DIR$/spring-thymeleaf-sql-main/spring-thymeleaf-sql-main/thymleafspring/pom.xml" />
+        <option value="$PROJECT_DIR$/expense-tracker-app/pom.xml" />
+        <option value="$PROJECT_DIR$/todo/pom.xml" />
       </list>
     </option>
   </component>
