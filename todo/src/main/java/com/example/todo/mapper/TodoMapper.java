@@ -7,10 +7,10 @@ public class TodoMapper {
 
     public static Todo mapToTodo(TodoDto todoDto) {
         return new Todo(
-            todoDto.id(),
-            todoDto.title(),
-            todoDto.description(),
-            todoDto.completed()
+            todoDto.getId(),
+            todoDto.getTitle(),
+            todoDto.getDescription(),
+            todoDto.isCompleted()
         );
     }
 

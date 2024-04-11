@@ -72,9 +72,9 @@ public class TodoServiceImpl implements TodoService {
                         () -> new RuntimeException("Todo not found")
                 );
         todo.setId(id);
-        todo.setTitle(todoDto.title());
-        todo.setDescription(todoDto.description());
-        todo.setCompleted(todoDto.completed());
+        todo.setTitle(todoDto.getTitle());
+        todo.setDescription(todoDto.getDescription());
+        todo.setCompleted(todoDto.isCompleted());
         Todo savedTodo = todoRepository.save(todo);
 
         return modelMapper.map(savedTodo, TodoDto.class);//TodoMapper.mapToTodoDto(savedTodo);
