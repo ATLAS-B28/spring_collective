@@ -1,12 +1,13 @@
 package com.example.todo.config;
 
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,8 +20,10 @@ import org.springframework.security.web.SecurityFilterChain;
 //bean-based configuration for the authorization types.
 @EnableMethodSecurity // enables @preauthorized
 @Configuration
+@AllArgsConstructor
 public class SpringSecConfig {
 
+    private UserDetailsService userDetailsService;
     //passoword encoder
     @Bean
     public static PasswordEncoder passwordEncoder() {
@@ -61,8 +64,17 @@ public class SpringSecConfig {
 
         return httpSecurity.build();
     }
-    //customize the user entity
+
+
+    //the user details will automatically be passed to auth manager
+    //after it is injected and has called the load user function
+
     @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+        return configuration.getAuthenticationManager();
+    }
+    //customize the user entity
+    /*@Bean
     public UserDetailsService userDetailsService() {
 
         UserDetails user = User.builder()
@@ -78,5 +90,10 @@ public class SpringSecConfig {
                 .build();
 
         return new InMemoryUserDetailsManager(user, admin);
-    }
+        //in-memory authentication -> stores users in memory
+        //using the configuration and spring security filter chain
+        //we have also used - database authentication
+        //to store users in a database along with their roles,
+        //which is a separate role model in a database
+    }*/
 }
