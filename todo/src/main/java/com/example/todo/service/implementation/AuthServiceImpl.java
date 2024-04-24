@@ -48,6 +48,6 @@ public class AuthServiceImpl implements AuthService {
         roles.add(userRole);
         user.setRoles(roles);
         userRepository.save(user);
-        return null;
+        return "User registered successfully";
     }
 }
