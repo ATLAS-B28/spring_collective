@@ -1,5 +1,6 @@
 package com.example.todo.controller;
 
+import com.example.todo.dto.LoginDto;
 import com.example.todo.dto.RegisterDto;
 import com.example.todo.service.AuthService;
 import lombok.AllArgsConstructor;
@@ -21,5 +22,11 @@ public class AuthController {
     public ResponseEntity<String> register(@RequestBody RegisterDto registerDto) {
         String response = authService.register(registerDto);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
+    }
+
+    //building login api
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody LoginDto loginDto) {
+       return new ResponseEntity<>(authService.login(loginDto), HttpStatus.OK);
     }
 }

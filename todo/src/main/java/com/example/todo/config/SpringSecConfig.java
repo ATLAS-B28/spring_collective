@@ -51,6 +51,7 @@ public class SpringSecConfig {
                             //    authorize.requestMatchers(HttpMethod.PATCH,"/api/v1/todos/update-status-incomplete/{id}").hasRole("ADMIN");
                               */
                                 authorize.requestMatchers("/api/v1/auth/register").permitAll();
+                                authorize.requestMatchers("/api/v1/auth/login").permitAll();
                                 authorize.anyRequest().authenticated();
                                 //anyRequest - Maps any request.
                                 //Returns:
