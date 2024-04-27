@@ -1,5 +1,7 @@
 package com.example.todo.config;
 
+import com.example.todo.security.JwtAuthenticationEntryPoint;
+import com.example.todo.security.JwtAuthenticationFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 //now we will be using @EnableMethodSecurity
 //bean-based configuration for the authorization types.
@@ -24,6 +27,8 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SpringSecConfig {
 
     private UserDetailsService userDetailsService;
+    private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
     //passoword encoder
     @Bean
     public static PasswordEncoder passwordEncoder() {
@@ -64,6 +69,11 @@ public class SpringSecConfig {
                     .httpBasic(Customizer.withDefaults());
         //httpBasic - Configures HTTP Basic authentication
 
+        httpSecurity.exceptionHandling(exception -> {
+            exception.authenticationEntryPoint(jwtAuthenticationEntryPoint);
+        });
+
+        httpSecurity.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();
     }
 
