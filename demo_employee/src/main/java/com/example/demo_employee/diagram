@@ -1,0 +1,10 @@
+ _______  DTO ________________         _______       _____       ____
+|       | -->| Presentation   |------>|Service|---->|DAO  |     |    |
+|Postman|    | Layer          |       |Layer  |     |Layer|<--->| DB |
+|_______| <--|________________|<------|_______|<----|_____|     |____|
+3-Layer architecture is a common architectural pattern
+used in spring boot applications to organize the
+codebase and separate concerns.
+1) Presentation Layer
+2) Service Layer
+3) Data Access Object Layer
