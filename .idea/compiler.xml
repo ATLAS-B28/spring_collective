@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="todo" />
-        <module name="demo_chat" />
         <module name="bank" />
         <module name="thymleafspring" />
-        <module name="SeleniumTest" />
         <module name="testing" />
+        <module name="demo_chat" />
+        <module name="SeleniumTest" />
+        <module name="demo_employee" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bank" options="-parameters" />
       <module name="demo_chat" options="-parameters" />
+      <module name="demo_employee" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />
       <module name="security" options="-parameters" />
