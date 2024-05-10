@@ -6,9 +6,8 @@ import com.example.demo_employee.mapper.EmployeeMapper;
 import com.example.demo_employee.repository.EmployeeRepository;
 import com.example.demo_employee.service.EmployeeService;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -31,13 +30,16 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public List<EmployeeDto> getAllEmployee() {
-        return List.of(EmployeeMapper.mapToEmployeeDto((Employee) employeeRepository.findAll()));
+    public List<EmployeeDto> getAllEmployees() {
+        List<Employee> employees = employeeRepository.findAll();
+        return employees.stream()
+                .map(EmployeeMapper::mapToEmployeeDto)
+                .collect(Collectors.toList());
     }
 
     @Override
     public EmployeeDto updateEmployee(Long employeeId, EmployeeDto employeeDto) {
-        Employee employee =employeeRepository.findById(employeeId)
+        Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new RuntimeException(STR."Employee of id \{employeeId} doesnot exits"));
 
         //set the employee using getters of employee dto
@@ -52,7 +54,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public void deleteEmployee(Long id) {
-        Employee employee = employeeRepository.findById(id).orElseThrow(() -> new RuntimeException(STR."Employee of id \{id} doesnot exits"));;
+        Employee employee = employeeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException(STR."Employee of id \{id} doesnot exits"));;
         employeeRepository.deleteById(id);
     }
 

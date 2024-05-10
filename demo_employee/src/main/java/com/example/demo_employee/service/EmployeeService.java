@@ -9,7 +9,7 @@ public interface EmployeeService {
 
     EmployeeDto getEmployeeById(Long id);//employee dto here is the return type
 
-    List<EmployeeDto> getAllEmployee();
+    List<EmployeeDto> getAllEmployees();
 
     EmployeeDto updateEmployee(Long employeeId,EmployeeDto employeeDto);
 
