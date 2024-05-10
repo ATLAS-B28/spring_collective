@@ -1,11 +1,8 @@
 package com.example.demo_employee.controller;
 
 import com.example.demo_employee.dto.EmployeeDto;
-import com.example.demo_employee.entity.Employee;
-import com.example.demo_employee.mapper.EmployeeMapper;
 import com.example.demo_employee.service.EmployeeService;
 import lombok.AllArgsConstructor;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
