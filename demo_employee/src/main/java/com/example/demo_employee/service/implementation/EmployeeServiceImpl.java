@@ -5,11 +5,13 @@ import com.example.demo_employee.entity.Employee;
 import com.example.demo_employee.mapper.EmployeeMapper;
 import com.example.demo_employee.repository.EmployeeRepository;
 import com.example.demo_employee.service.EmployeeService;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;
