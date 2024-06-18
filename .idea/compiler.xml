@@ -11,9 +11,11 @@
         <module name="bank" />
         <module name="thymleafspring" />
         <module name="testing" />
+        <module name="graphical" />
         <module name="demo_chat" />
         <module name="SeleniumTest" />
         <module name="demo_employee" />
+        <module name="wells_forage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,10 +33,12 @@
       <module name="demo_employee" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />
+      <module name="graphical" options="-parameters" />
       <module name="security" options="-parameters" />
       <module name="security_demo" options="-parameters" />
       <module name="thymleafspring" options="-parameters" />
       <module name="todo" options="-parameters" />
+      <module name="wells_forage" options="-parameters" />
     </option>
   </component>
 </project>

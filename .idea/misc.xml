@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/todo/pom.xml" />
         <option value="$PROJECT_DIR$/demo_chat/pom.xml" />
         <option value="$PROJECT_DIR$/demo_employee/pom.xml" />
+        <option value="$PROJECT_DIR$/graphical/pom.xml" />
+        <option value="$PROJECT_DIR$/wells_forage/pom.xml" />
       </list>
     </option>
   </component>
