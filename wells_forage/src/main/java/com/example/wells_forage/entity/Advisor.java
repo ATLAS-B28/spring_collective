@@ -1,5 +1,6 @@
 package com.example.wells_forage.entity;
 
+import com.example.wells_forage.dto.UserDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,6 +29,7 @@ public class Advisor {
     @Column(name = "last_name")
     private String lastName;
 
+    @Getter
     @OneToMany
     @JoinTable(
             name = "adv_user",
@@ -35,4 +37,7 @@ public class Advisor {
             inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     private Set<User> users = new LinkedHashSet<>();
+
+    public void setUser(UserDTO user) {
+    }
 }

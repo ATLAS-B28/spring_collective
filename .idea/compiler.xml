@@ -10,7 +10,6 @@
         <module name="todo" />
         <module name="bank" />
         <module name="thymleafspring" />
-        <module name="web" />
         <module name="testing" />
         <module name="graphical" />
         <module name="demo_chat" />
@@ -26,6 +25,7 @@
       <module name="Queue" target="21" />
       <module name="security" target="17" />
       <module name="security_demo" target="21" />
+      <module name="web" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

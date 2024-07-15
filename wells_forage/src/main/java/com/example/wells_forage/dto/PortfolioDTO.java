@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class PortfolioDTO {
 
-    private String portfolioId;
+    private Long portfolioId;
     private String portfolioName;
     private String category;
     private Date createdDate;

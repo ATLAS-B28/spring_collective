@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class SecurityDTO {
 
-    private int sec_id;
+    private Long sec_id;
     private String sec_name;
     private String category;
     private double purchasePrice;
