@@ -12,13 +12,14 @@
         <module name="thymleafspring" />
         <module name="testing" />
         <module name="graphical" />
-        <module name="demo_chat" />
+        <module name="demo_web_socket" />
         <module name="SeleniumTest" />
         <module name="demo_employee" />
         <module name="wells_forage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo_chat" target="21" />
       <module name="expense-tracker-app" target="21" />
       <module name="form" target="17" />
       <module name="jwt-basic" target="21" />
@@ -33,6 +34,7 @@
       <module name="bank" options="-parameters" />
       <module name="demo_chat" options="-parameters" />
       <module name="demo_employee" options="-parameters" />
+      <module name="demo_web_socket" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />
       <module name="graphical" options="-parameters" />

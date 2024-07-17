@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/wells_forage/pom.xml" />
         <option value="$PROJECT_DIR$/jwt-basic/pom.xml" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/demo_web_socket/pom.xml" />
       </list>
     </option>
   </component>
