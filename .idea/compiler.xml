@@ -13,6 +13,7 @@
         <module name="testing" />
         <module name="graphical" />
         <module name="demo_web_socket" />
+        <module name="demo_login" />
         <module name="SeleniumTest" />
         <module name="demo_employee" />
         <module name="wells_forage" />
@@ -34,6 +35,7 @@
       <module name="bank" options="-parameters" />
       <module name="demo_chat" options="-parameters" />
       <module name="demo_employee" options="-parameters" />
+      <module name="demo_login" options="-parameters" />
       <module name="demo_web_socket" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />

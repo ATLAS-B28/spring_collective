@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/jwt-basic/pom.xml" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/demo_web_socket/pom.xml" />
+        <option value="$PROJECT_DIR$/demo_login/pom.xml" />
       </list>
     </option>
   </component>
