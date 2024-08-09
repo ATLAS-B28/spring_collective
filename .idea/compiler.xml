@@ -10,6 +10,7 @@
         <module name="todo" />
         <module name="bank" />
         <module name="thymleafspring" />
+        <module name="demo_rabbit" />
         <module name="testing" />
         <module name="graphical" />
         <module name="demo_web_socket" />
@@ -38,6 +39,7 @@
       <module name="demo_employee" options="-parameters" />
       <module name="demo_htmx" options="-parameters" />
       <module name="demo_login" options="-parameters" />
+      <module name="demo_rabbit" options="-parameters" />
       <module name="demo_web_socket" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />

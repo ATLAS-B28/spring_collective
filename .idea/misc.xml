@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/demo_web_socket/pom.xml" />
         <option value="$PROJECT_DIR$/demo_login/pom.xml" />
         <option value="$PROJECT_DIR$/demo_htmx/pom.xml" />
+        <option value="$PROJECT_DIR$/demo_rabbit/pom.xml" />
       </list>
     </option>
   </component>
