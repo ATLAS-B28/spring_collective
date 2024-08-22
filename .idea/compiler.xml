@@ -13,6 +13,7 @@
         <module name="demo_rabbit" />
         <module name="testing" />
         <module name="graphical" />
+        <module name="demo-docker" />
         <module name="demo_web_socket" />
         <module name="SeleniumTest" />
         <module name="demo_htmx" />
@@ -35,6 +36,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bank" options="-parameters" />
+      <module name="demo-docker" options="-parameters" />
       <module name="demo_chat" options="-parameters" />
       <module name="demo_employee" options="-parameters" />
       <module name="demo_htmx" options="-parameters" />

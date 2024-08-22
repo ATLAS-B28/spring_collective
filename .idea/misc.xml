@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/demo_login/pom.xml" />
         <option value="$PROJECT_DIR$/demo_htmx/pom.xml" />
         <option value="$PROJECT_DIR$/demo_rabbit/pom.xml" />
+        <option value="$PROJECT_DIR$/demo_docker/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-docker/pom.xml" />
       </list>
     </option>
   </component>
