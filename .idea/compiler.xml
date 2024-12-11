@@ -7,18 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="todo" />
-        <module name="bank" />
         <module name="thymleafspring" />
         <module name="demo_rabbit" />
         <module name="testing" />
         <module name="graphical" />
-        <module name="demo-docker" />
         <module name="demo_web_socket" />
-        <module name="SeleniumTest" />
-        <module name="demo_htmx" />
         <module name="demo_employee" />
         <module name="wells_forage" />
+        <module name="todo" />
+        <module name="bank" />
+        <module name="demo-docker" />
+        <module name="SeleniumTest" />
+        <module name="demo_htmx" />
       </profile>
       <profile name="Annotation profile for spring-mysql" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -32,6 +32,15 @@
         </processorPath>
         <module name="spring-mysql" />
       </profile>
+      <profile name="Annotation profile for demo_sec" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="demo_sec" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo_chat" target="21" />
@@ -42,6 +51,7 @@
       <module name="Queue" target="21" />
       <module name="security" target="17" />
       <module name="security_demo" target="21" />
+      <module name="spring_sec_sql" target="21" />
       <module name="web" target="21" />
     </bytecodeTargetLevel>
   </component>
@@ -54,6 +64,7 @@
       <module name="demo_htmx" options="-parameters" />
       <module name="demo_login" options="-parameters" />
       <module name="demo_rabbit" options="-parameters" />
+      <module name="demo_sec" options="-parameters" />
       <module name="demo_web_socket" options="-parameters" />
       <module name="expense-tracker-app" options="-parameters" />
       <module name="form" options="-parameters" />
@@ -62,6 +73,7 @@
       <module name="security" options="-parameters" />
       <module name="security_demo" options="-parameters" />
       <module name="spring-mysql" options="-parameters" />
+      <module name="spring_sec_sql" options="-parameters" />
       <module name="thymleafspring" options="-parameters" />
       <module name="todo" options="-parameters" />
       <module name="web" options="-parameters" />

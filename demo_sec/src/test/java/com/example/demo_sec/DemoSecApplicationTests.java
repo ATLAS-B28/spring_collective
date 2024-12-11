@@ -1,10 +1,10 @@
-package com.example.spring_sec_sql;
+package com.example.demo_sec;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringSecSqlApplicationTests {
+class DemoSecApplicationTests {
 
 	@Test
 	void contextLoads() {

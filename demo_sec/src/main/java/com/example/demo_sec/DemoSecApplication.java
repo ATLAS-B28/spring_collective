@@ -1,13 +1,13 @@
-package com.example.spring_sec_sql;
+package com.example.demo_sec;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringSecSqlApplication {
+public class DemoSecApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringSecSqlApplication.class, args);
+		SpringApplication.run(DemoSecApplication.class, args);
 	}
 
 }
